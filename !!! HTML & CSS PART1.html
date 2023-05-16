@@ -1,0 +1,3243 @@
+<!-- TUH5&C3S: PART1 CODE WITH MOSH-->
+
+<!-- Ctrl + B.............................otwórz/zamknij panel boczny  -->
+<!-- Shift + Ctrl + P.....................okno komend  -->
+<!-- Shift + Ctrl + I.....................DevTools w przeglądarce -->
+<!-- Alt + strzałka góra/dół..............przenoszenie zaznaczonego elementu góra/dół -->
+<!-- Shift + Alt + strzałka góra/dół......kopiowanie zaznaczonego elementu góra/dół -->
+<!-- Ctrl + D.............................podwajanie/potrajanie/... kursorów   -->
+<!-- Ctrl + K + C.........................zamienia wiersz w komentarz -->
+<!-- ul>li*3{item $}......................zagnieżdzanie elementów itd -->
+<!-- Ctrl + Space.........................otwiera okno wyboru dla danej wlasciwosci -->
+<!-- Ctrl + Alt + strzałka w dół..........kursor duplikuje sie na dole -->
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WEB DEWELOPMENT FUNDAMENTALS -->
+<!-- 5, 6 HTML BASICS, CSS BASICS -->
+
+<!-- HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FILES/icon AMW.png" />
+    <title>HTML & CSS PART1</title>
+    <link rel="stylesheet" href="normalize" />
+    <link rel="stylesheet" href="style" />
+  </head>
+  <body>
+    <img src="FILES/LOGO AMW.png" alt="Logo of AMWoltaika" />
+    <p class="username"></p>
+    <p>I love to teach HTML</p>
+  </body>
+</html>
+
+<!-- CSS -->
+
+<style>
+  img {
+    width: 100px;
+    border-radius: 10px;          (50% wysokości dla okręgu
+    float: left;                  zdjęcie do lewej strony)
+    margin-right: 10px;
+  }
+
+  p.username {
+    font-weight: bold;
+  }                               (lub .username dla klasy)
+
+  p {
+    font-weight: bold;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WEB DEWELOPMENT FUNDAMENTALS -->
+<!-- 7 FORMATTING CODE -->
+
+preferences > settings > format on save
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WEB DEWELOPMENT FUNDAMENTALS -->
+<!-- 9 VALIDATING WEB PAGES -->
+
+validator.w3.org (dla HTML) ||||||||| jigsaw.w3.org/css-validator/ (dla CSS)
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 2 THE HEAD SECTION -->
+
+<meta name="keywords" content="HTML, CSS, ect" />
+słowa klucz reprezentujące strone przy wyszukiwaniu
+
+<meta name="description" content="........" />
+dodaje opis do strony w wyszukiwarce pod nazwa
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 3 TEXT -->
+
+nagłówki
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+<p>I love learn <em>HTML</em></p>
+wyróżnia dany element (domyślnie italic)
+
+<p>I love learn <strong>HTML</strong></p>
+wyróżnia dany element (domyślnie bold)
+
+<style>
+  em {
+   color: red;
+   font-style: normal;                    styl wyróżnienia elementu
+  }
+</style>
+
+<i>italic</i>
+nie używać w HTML
+
+<b>bold</b>
+nie używac w HTML
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 4 ENTITIES -->
+
+&lt; <
+<!--  -->
+&gt; >
+<!--  -->
+&copy; copyright symbol
+<!--  -->
+&nbsp; no breaking space
+<!--  -->
+<!--  -->
+!!!!!! dev.w3.org ||||||||||| wszystkie dostępne znaki
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 5 HYPERLINKS -->
+
+<a href=""></a>
+
+<a href="company/about.html">About Me</a>
+relatywny link
+
+<a href="../about.html">Home Page</a>
+".." idziemy do folderu wyżej
+
+<a href="">
+  <img src="images/pawel.jpg" alt="" />
+</a>
+zdjęcie, które jest linkiem
+
+<a href="images/pawel.jpg" download>My Photo</a>
+zdjęcie, które można po kliknięciu ściągnąć (ATRYBUT download nie ma wartości)
+
+<a href="/about.html"></a>
+absolutny link
+
+<!--  -->
+jump to section
+<a href="#section-css">CSS</a>
+
+<h2>HTML</h2>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus velit
+  facere possimus maiores nesciunt, distinctio, natus tenetur, animi magnam
+  inventore exercitationem delectus non autem veniam ex beatae culpa officiis
+  praesentium quae labore ipsam reprehenderit. Eligendi odit molestias eveniet,
+  debitis maxime porro consequuntur voluptas veniam, ad asperiores perferendis
+  impedit quod.
+</p>
+<h2 id="section-css">HTML</h2>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus velit
+  facere possimus maiores nesciunt, distinctio, natus tenetur, animi magnam
+  inventore exercitationem delectus non autem veniam ex beatae culpa officiis
+  praesentium quae labore ipsam reprehenderit. Eligendi odit molestias eveniet,
+  debitis maxime porro consequuntur voluptas veniam, ad asperiores perferendis
+  impedit quod.
+</p>
+
+jump to top of the page
+<a href="#">Jump to top</a>
+
+<!--  -->
+link do strony zewnetrznej (absolutny)
+<a href="https://google.com">GOOGLE</a>
+
+link który otwiera sie w nowej karcie
+<a href="https://google.com" target="_blank">GOOGLE</a>
+
+link z mailem wpisanym
+<a href="mailto:socoolsok@gmail.com">Email Me</a>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 6 IMAGES -->
+
+<img src="images/pawel.jpg" alt="Paweł on his trip to colorado" />
+alt - opis sytuacji na zdjeciu
+
+<style>
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;     jeśli zdjecie prostokatne bedzie scisniete to COVER chowa cześć ponizej 200px
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 7 VIDEO AND AUDIO -->
+
+<video src="videos/ocean.mp4"></video>
+
+<video controls src="videos/ocean.mp4"></video>
+atrybut 'controls' dodaje ikonki do nawigacji
+
+<video controls autoplay src="videos/ocean.mp4"></video>
+atrybut 'autoplay' rozpoczyna odtwarzanie po zaladowaniu strony
+
+<video controls loop src="videos/ocean.mp4"></video>
+atrybut 'loop' zapętla (mozna łączyć atrybuty)
+
+<video src="videos/ocean.mp4">Your browser doesn't support videos.</video>
+wpisać dla starych przeglądarek
+
+<!--  -->
+
+<audio src="audio/rain.mp3"></audio> bulion attributs sa takie same jak w wideo
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 8 LISTS -->
+
+LISTA NIEUPORZADKOWANA (może być opis, zdjęcie, link)
+<ul>
+  <li>About Me</li>
+  <li><img src="" alt="" /></li>
+  <li><a href=""></a>Link</li>
+  <li>
+    Courses
+    <ul>
+      <li>JAVA</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </li>
+</ul>
+
+<style>
+  ul {
+  list-style-type: none;   usuwamy punktory
+  }
+</style>
+
+<!--  -->
+LISTA UPORZADKOWANA
+
+<ol>
+  <li>Podgrzej piekarnik</li>
+  <li>Polóż składniki</li>
+  <li>Wstaw pizze</li>
+</ol>
+
+<!--  -->
+LISTA DEFINICYJNA (LISTA DEFINICJI, LISTA OPISOWA)
+<dl>
+  <dt>COURSES</dt>
+  definition term (pojęcie)
+  <dd>THE ULTIMATE HTML AND CSS</dd>
+  definition description (definicja, opis pojęcia)
+  <dt>SKILLS</dt>
+  <dd>HTML</dd>
+  <dd>CSS</dd>
+  <dd>GIT</dd>
+</dl>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 9 TABLES -->
+
+thead, tbody, tfoot: semantic elements
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Expenses</th>
+      <!-- colspan rozszerza jedna komórkę na 2 kolumny dlatego tutaj jedna pozycj th np -->
+    </tr>
+    <tr>
+      <th>Category</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Marketing</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Accounting</td>
+      <td>$200</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <th>$300</th>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- obramowanie -->
+
+<style>
+  table {
+    border: 1px solid grey;                obramowka tabelki
+  }
+
+  td {
+    border: 1px solid grey;              obramowka komórek
+  }
+</style>
+
+<!-- !!! ale nie powtarzamy kodu dlatego zapisujemy to -->
+
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid grey;
+    border-collapse: collapse;            łączy obramowanie komórek bo domyślnie są rozłączone
+    padding: 5px;                         oddalenie obramowania od tekstu
+  }
+
+  tfoot {
+    text-align: left;                     wyrównuje do lewej ponieważ domyślnie tekst th na środku komórki
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 10 CONTAINERS -->
+
+<div class="product"></div>
+DIV blok element (GENERYCZNY CONTAINER)
+
+<style>
+  .product {
+    background-color: gold;
+    width: 300px;
+  }
+</style>
+
+<p>
+  <span class="hilights">Lorem</span> ipsum dolor sit amet consectetur
+  adipisicing elit. Commodi nam labore fugiat assumenda eos, sapiente mollitia
+  vel. Blanditiis placeat earum, quisquam aliquid quam beatae repellat porro,
+  deserunt similique eaque veritatis.
+</p>
+SPAN liniowy element (GENERYCZNY CONTAINER)
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 11 SEMANTIC ELEMENTS -->
+
+(SEMANTIC CONTAINER)
+
+<!--  -->
+<article>
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+</article>
+dla samodzielnych części strony np box z jakas informacja, ktora moze
+-------funkcjonowac oddzielnie
+
+<!--  -->
+<figure>
+  <img src="/picture/pawel.jpg" alt="" />
+  <figcaption>My coffe this morning</figcaption>
+</figure>
+-------dla samodzielnych zdjęć ||| figcaption podpis
+
+<!--  -->
+<mark>
+  <p>
+    Lorem ipsum <mark>dolor</mark> sit, amet consectetur adipisicing elit. Id
+    exercitationem laboriosam sapiente hic itaque neque!
+  </p>
+</mark>
+-------dla podkreślenia (to samo co uzyskalismy background w stylu dla klasy)
+
+<!--  -->
+<p>Published <time>January 1 2021 05:00pm</time></p>
+-------nic nie zmienia w zapisie ale lepiej oznacza strone
+<p>Published <time datetime="2021-01-01 17:00"></time></p>
+-------dla formatu
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- HTML BASICS -->
+<!-- 12 STRUCTURING A WEB PAGE -->
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Products</h2>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+    <section>
+      <h2>Testimonial</h2>
+      <article>
+        <section></section>
+        <section></section>
+      </article>
+      <article></article>
+      <article></article>
+    </section>
+  </main>
+  <aside></aside>
+  <footer></footer>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 2 PROVIDING CSS -->
+
+<p id="first">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, itaque?
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, itaque?
+</p>
+
+<style>
+  p {
+    color: black;
+  }
+
+  #first {
+    color: blue;
+    font-weight: 700;
+  }
+</style>
+do wyroznienia paragrafu
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 3 NORMALIZING CSS -->
+
+<style>
+  body {
+    margin: 10px;
+  }
+</style>
+po normalizacji znika margin dlatego dodajemy go w css
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 4 BASIC SELECTORS -->
+
+SELECTORS ^TYPE ^ID ^CLASS ^ATTRIBUTE
+
+<body>
+  <section id="products">
+    <article class="products"></article>
+    <article class="products"></article>
+    <article class="products"></article>
+  </section>
+  <a href="https://google.com" target="_blank">GOOGLE</a>
+</body>
+
+<style>
+  #products {                         id
+  }
+
+  .products {                         klasa
+  }
+
+  article {                           typ
+  }
+
+  a[target] {                         stylowanie po atrybuciecie
+  }
+
+  a[target="_blank"] {                doprecyzowany atrybut
+  }
+
+  a[href="https://google.com"] {      to nie jest najlepsze bo sie psuje przy literowkach
+  }
+
+  a[href*="google"] {                 to jest lepsze bo wystarczy ze zawiera sie slowo w ciągu i lapie
+  }
+
+  a[href^="https"] {                  zaznacza wszystkie elementy anchor (a) ktore zaczynaja sie od HTTPS
+  }
+
+  a[href$=".com"] {                   zaznacza wszystkie elementy anchor (a) ktore kończą sie na .com
+  }
+
+  a[href^="https"][href$=".com"] {    można łączyć atrybuty
+
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 5 RELATIONALS SELECTORS -->
+
+<body>
+  <section id="products">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <article>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+  </section>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+</body>
+
+aby wystylowac p mozna dac id lub class ale mozna zrobic relacje z rodzicem
+
+<style>
+  #products p {       to bedzie zaaplikowane do kazdego paragrafu nawet glebiej zagniezdzonego (1 i 2)
+  }
+
+  #products > p {     to bedzie zaaplikowane do bezposredniego dziecka (2 paragraf)
+  }
+
+  #products + p {     tylko bezpośredni bliźniak sekcji id pierwszy po sekcji (3 paragraf)
+  }
+
+  #products ~ p {     wszystkie blizniaki sekcji id (3 i 4 paragraf)
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 6 PSEUDO-CLASS SELECTORS -->
+
+<body>
+  <article>
+    <p class="first">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </article>
+</body>
+
+<style>
+  .first {                              dla wszystkich elementów o klasie "first"
+    font-size: 140%;
+    font-style: italic;
+  }
+
+  article .first {                      tylko dla elementów o klasie "first" nalezacych do artykułu
+  }
+</style>
+^^^^^normalne klasy^^^^^
+
+<!-- PSEUDO CLASSES DO STYLOWANIA SZCZEGÓLNYCH STANÓW-->
+<style>
+  article :first-child {                tylko dla pierwszego dziecka w artykule
+  }
+
+  article :first-of-type {              dla wszystkich pierwszych elementów danego TYPU w artykule
+  }
+
+  article p:first-of-type {             tylko dla pierwszego elementu TYPU paragraf (p) w artykule
+  }
+
+  article :last-child {                 tylko dla ostatniego dziecka w artykule
+  }
+
+  article :last-of-type {               dla wszystkich ostatnich elementów danego TYPU w artykule
+  }
+</style>
+
+<!-- WYBIERANIE ELEMENTÓW Z LISTY -->
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+  <li>item 4</li>
+  <li>item 5</li>
+</ul>
+
+<style>
+  ul li :nth-child(odd) {                  wybierze liczby nieparzyste
+  }
+
+  ul li :nth-child(even) {                 wybierze liczby parzyste
+  }
+
+  ul li :nth-child(3n) {                   wybierze co 3 liczbe
+  }
+</style>
+
+<!-- LINK EFEKTY INTERAKTYWNE GUZIKI-->
+
+<style>
+  a:visited,            zmienia kolor odwiedzonego hiperlinku
+  a:link {              zmienia kolor linku
+    color: gray;
+  }
+
+  a:hover,              zmienia kolor po najechaniu kursorem (to moze byc img/ div/ etc)
+  a:focus {             zmienia kolor przy nacisnieciu tab koncentrujacego sie na linkach
+    color: white
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 7 PSEUDO-ELEMENT SELECTORS -->
+
+DO STYLOWANIA CZESCI ELEMENTU NP. PIERWSZA LITERA
+
+<body>
+  <h1>Heading</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum
+    necessitatibus facilis neque fugit velit nam exercitationem ullam repellat
+    nostrum. Dolor cum praesentium numquam impedit animi ullam laudantium nulla
+    deserunt!
+  </p>
+</body>
+
+<style>
+  p::first-letter {               DO PIERWSZEJ LITERY
+    font-size: 140%;
+    font-weight: bold;
+  }
+
+  p::first-line {                 DO PIERWSZEGO WERSU
+    font-weight: bold;
+  }
+
+  p::selection {                  DO ZMIANY NP KOLORU ZAZNACZENIA KURSOREM DLA PARAGRAFU (p)
+    background-color: pink;
+  }
+
+  ::selection {                   DO ZMIANY NP KOLORU ZAZNACZENIA KURSOREM dla wszystkich elementów
+    background-color: pink;
+  }
+
+  p::before {                     DODAJE ... PRZED KAZDYM PARAGRAFEM (p)
+    content: "...";
+  }
+
+  p::after {                      DODAJE ... PO KAZDYM PARAGRAFIE (p)
+    content: "...";
+  }
+
+  p::after {
+    content: "...";
+    display: block;               ZMIENIAMY INLINE NA BLOCK CZYLI CALA LINIA ZABLOKOWANA
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 8 SELECTORS SPECIFICTY -->
+
+<!-- ID > CLASSES, ATTRIBUTE > TYPE  -->
+w przypadku, gdy SLEKTORY mają taką samą wartość ostatni nadpisuje powyższe
+(czyli zapisany niżej wygra i bedzie stylowal) (0,0,1) typ | (0,1,0) klasa |
+(1,0,0) id
+
+<article class="featured">
+  <h1 id="products" class="highlight"></h1>
+</article>
+
+<style>
+  h1 {
+    color: pink !important;           !important ma pierwszenstwo ale nie uzywamy (messy - bad solution)
+  }
+
+  h1#products {                       jeśli chcemy przebić zasadę lepiej polaczyc np typ (0,0,1) z id (1,0,0)
+    color: blue;
+  }
+
+  .featured #products {               (1,1,0)
+    color: blue;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 9 INHERITANCE -->
+DZIEDZICZENIE
+
+<body>
+  <p>
+    Lorem ipsum dolor sit, amet <strong>consectetur</strong> adipisicing elit.
+    Incidunt, maiores.
+  </p>
+</body>
+
+<style>
+  p {
+    color: dodgerblue;          słowo w elemencie <STRONG> dziedziczy kolor od paragrafu
+  }
+
+  strong {
+    color: initial;               wartość mówiąca żeby nie dziedziczył
+  }
+
+  /* odrotna sytuacja (nie dziedziczy tabeli) */
+
+  p {
+    border: 1px solid black;    paragraf w ramce
+  }
+
+  strong {
+    border: inherit;               wartość mówiąca, żeby dziedziczył
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 10 COLORS -->
+Kwadrat
+<body>
+  <div class="box"></div>
+</body>
+
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(230, 205, 16);
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(230, 205, 16, 0.5);      a| od 0 do 1 transparencja
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #e6cd10;                        HEXADECIMAL SYSTEM
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(217, 90%, 61%);
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: hsla(217, 90%, 61%, 0.5);     a| od 0 do 1 transparencja
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(217deg 90% 61%);
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 11 GRADIENTS -->
+gradient to zdjęcie wiec uzywamy background lub background-image
+
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(blue, yellow);
+  }
+  /* moze byc background-image */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, blue, yellow);
+  }
+  /* zmieniamy kierunek gradientu od lewej do prawej */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, blue, yellow);
+  }
+  /* zmieniamy kierunek gradientu od lewej góry do prawego dołu */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, blue, yellow);
+  }
+  /* zmieniamy kierunek gradientu od lewej góry do prawego dołu */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, blue, yellow);
+  }
+  /* zmieniamy kierunek gradientu od prawej góry do lewego dołu (45 stopni) */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, blue, yellow 30%);
+  }
+  /* dodając procent mowimy ze zółty zacznie sie po 30 proc dostepnego miejsca */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, blue, yellow 30%);
+  }
+  /* dodając procent mowimy ze zółty zacznie sie po 30 proc dostepnego miejsca */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, blue, yellow, tomato);
+  }
+  /* można uzywac wiecej niz 2 kolorow */
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(white, green);
+  }
+  /* white w środku drugi na zewnątrz - gradient kolisty */
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: radial-gradient(circle, white, green);
+  }
+  /* box jest prostokątem ale zmieniamy gradient elipsy na kolisty */
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: radial-gradient(circle at top left, white, green);
+  }
+  /* gradient kolisty przenosimy z srodka do rogu górnego lewego */
+</style>
+
+CSS Gradient Generator (SKOPIOWANE WARTOŚCI)
+<!-- (pierwsza dla starych przegladarek gdyby nie obslugiwaly gradienty) -->
+
+<style>
+  .box {
+    background: rgb(56, 195, 120);
+    background: linear-gradient(
+      313deg,
+      rgba(56, 195, 120, 1) 0%,
+      rgba(0, 255, 229, 1) 75%
+    );
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 12 BORDERS -->
+
+<style>
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px solid royalblue; /* Linia ciągła */
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dotted royalblue; /* Linia kropkowana */
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dashed royalblue; /* Linia przerywana */
+    border-top: 20px solid royalblue; /* Zmienia linie górna na grupsza i ciagłą */
+    border-width: 10px 20px 10px 20px; /* Kazda linia podana oddzielnie TRBL */
+    border-width: 10px 20px; /* to samo co wyżej - skrocony opis */
+    border-width: 10px 20px; /* to samo co wyżej - skrocony opis */
+    border-width: 10px; /* wszystkie linnie jedna grublość */
+    border-style: dashed dotted; /* góra kreska prawa kropka dół kreska lewa kropka */
+    border-color: aqua black blue yellow; /* góra aqua prawa black dół blue lewa yellow */
+
+    border-radius: 10px; /* zaokrąglenie */
+    border-radius: 100%; /* full circle */
+  }
+</style>
+więcej kształtów pod CSS SHAPES
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CSS BASICS -->
+<!-- 13 SHADOWS -->
+
+CIEŃ NA ELEMENTACH
+<style>
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: 10px 10px;                   cień z prawej strony na dole
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: -10px -10px;                 cień z lewej strony u góry
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: 10px 10px grey;           cień z prawej strony na dole szary (mozemy uzywac rgb, hexa...)
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: 10px 10px 10px grey;        trzecia wartosc to rozmycie (im wieksza tym mocniejsze)
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: 0 0 10px grey;            0 0 centralnie polozony cień (DOOKOŁA ELEMENTU)
+  }
+</style>
+
+CIEŃ NA TEKŚCIE (ktory jest na boxie))
+<body>
+  <div class="box">
+    <h1>Heading</h1>
+  </div>
+</body>
+
+<style>
+  h1 {
+    color: white;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.2);       mixowanie cienia z tłem
+  }
+</style>
+
+<!-- TUH5&C3S: PART2 CODE WITH MOSH-->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 2 THE BOX MODEL -->
+
+margin collapsing (marginesy sie pokrywają)
+<!-- uzywamy padding do odzielania contentu od border a marginu do oddzielania contentów -->
+
+<body>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+</body>
+
+<style>
+  p {
+    padding: 20px
+    margin: 0;              odstep miedzy paragrafami 40px
+  }
+
+  p {
+    padding: 0;
+    margin: 20px;           odstep miedzy paragrafami 20px
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 3 SIZING ELEMENTS -->
+
+<body>
+  <div class="box"></div>
+</body>
+
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;       kwadrat ma 100 x 100
+
+    padding: 20px;
+    border: 10px solid orange;    pod dodaniu padding i border obiw wartosci powiekszyly box do 160 x 160
+
+    box-sizing: border-box;       wymiary 100 x 100 sa przeniesione na cale pudlo z padding i border czyli content ma 40 x 40
+
+    box-sizing: content-box;      (domyslnie) content wraca na 100 x 100 a calosc na 160 x 160
+  }
+</style>
+
+<!-- /* UNIVERSAL SELECTOR - dotyczy wszystkich elementów */ -->
+Gwiazdka na samej górze css
+
+<style>
+  *,
+  *::before,                      trzeba dodać reguły dla pseudo-elements
+  *::after {                      poniewaz uniwersal nie obejmuje ich
+    box-sizing: border-box;
+  }
+  body {
+    margin: 10px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+  }
+  .box::before {
+    content: "Hello";
+  }
+</style>
+
+<!-- width i height działają tylko dla blokowych elementów -->
+
+<span class="box"></span>
+element liniowy
+
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;          wtedy bedzie widoczny box
+  }
+</style>
+
+<span class="box"></span><span class="box"></span>
+jesli chce wyswietlic jeden obok drugiego daje spany w jednej linni bez przerwy
+(nie przenosze)
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 4 OVERFLOWING -->
+
+Dla długich tekstów np które przekraczaja granice contenera
+<body>
+  <div class="box">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta earum iure
+      dolorem doloremque temporibus ullam quas deserunt quibusdam nulla nam unde
+      exercitationem accusantium aspernatur fugiat, deleniti porro est
+      asperiores vero!
+    </p>
+  </div>
+</body>
+
+<style>
+
+
+  .box {
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+
+    overflow: visible; (domyslnie)
+    overflow: hidden; (ukrywa wykraczający tekst)
+    overflow: scroll; (dwa paski do przesuwania)
+    overflow: auto; (paski pojawią się tylko jak bedziemy ich potrzebować w osi x lub osi y)
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow: hidden auto; (to jest to samo co wyzej tylko w skroconej wersji)
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 5 MEASUREMENT UNITS -->
+
+JEDNOSTKI ABSOLUTNE: px__pt__in__cm__mm
+<!-- nie zmieniaja się -->
+
+JEDNOSTKI RELATYWNE: %__vw__vh__em__rem
+<!--
+% - RELATYWNE DO ROZMIARU KONTENERA
+
+vw - RELATYWNE DO OKNA WIDOKU (SZEROKOSC)
+vh - RELATYWNE DO OKNA WIDOKU (WYSOKOSC)
+
+em - RELATYWNE DO ROZMIARU FONTU
+rem - RELATYWNE DO ROZMIARU FONTU
+-->
+
+<body>
+  <div class="box"></div>
+</body>
+
+<style>
+  body {
+    width: 300px; (domyslnie okno przegladarki)
+  }
+
+
+  .box {
+    width: 50%;        50% szer elemntu rodzica KONTENERA (w tym przypadku body)
+    height: 100vh;     100% wys przegladarki (nie mozna przy wys uzyc % bo rodzic body wys dostos do contentu)
+    background-color: aqua;
+    border-top: 3px solid blue;
+  }
+
+  .box {
+    width: 10em;       10 razy ro tekstu (jesli nie jest zdefiniowane to od rodzica a jak nie ma to domyslnie 16px) 10 x 16px = 160px
+    height: 10rem;     10 razy roz tekstu root element (16px jesli nie ustalimy innego w body) 10 x 16px = 160px
+    background-color: aqua;
+    border-top: 3px solid blue;
+  }
+</style>
+
+TRICK przeskalowanie dla rem (najwyzsza reguła)
+
+<style>
+  html {
+    font-size: 62.5%;       62.5% x 16px = 10px łatwiejsze do skalowania
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 6 POSITIONING -->
+
+1 relatywne pozycjonowanie obiektu (relatywne do swojej poprzedniej pozycji)
+
+<body>
+  <div class="boxes">
+    <div class="box"></div>
+  </div>
+</body>
+
+<style>
+  .boxes {
+    width: 500px;
+    height: 500px;
+  }
+
+   .box {
+     position: relative;           w stosunku do poczatkowego ustawienia
+     left: 5rem;                   5 rem od lewej czyli w prawo
+     left: -5rem;                  5 rem od lewej czyli lewo
+     right: 5rem;                  5 rem z prawej do lewej
+     top: 5rem;                    5 rem od gory w dół
+     bottom: 5rem;                 5 rem od dołu w góre
+
+     z-index: 1;                   GŁĘBOKOŚĆ
+     z-index: -11;                 MOZE BYC DODATNIO I UJEMNIE WARTOSC WYZSZA IDZIE DO PRZODU DOMYSLNIE "0"
+
+   }
+</style>
+
+2 absolutne pozycjonowanie obiektu (relatywnie do konteneru w ktorym sie
+znajduje)
+
+<body>
+  <div class="boxes">
+    <div class="box"></div>
+  </div>
+</body>
+
+<style>
+  .boxes {
+    position: relative;            DODAJEMY TA WARTOSC NA RELATIVE
+  }
+
+   .box {
+     position: absolute;           w stosunku do poczatkowego ustawienia
+     right: 0;                     PRAWY
+     bottom: 0;                    DOLNY RÓG KONTENERA BOXES (BOX BEDZIE NA INNEJ WARSTWIE NIŻ POPRZEDNI)
+   }
+</style>
+
+3 fixed (relatywnie do okna przeglądarki) (viewport)
+
+<style>
+  .box {
+    position: fixed;          w stosunku do okna
+    top: 0;                   przykleji sie do góry okna jak np manu navigacyjne
+  }
+
+  .box {
+    position: fixed;          w stosunku do okna
+    top: 0;                   przykleji sie do góry okna jak np manu navigacyjne
+    left: 2rem;
+    right: 2rem;
+    width: auto;              oddalone od bokow o ta samo dlugosc bedzie zmienialo wielkosc w oknie przegladarki
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 7 FLOATING ELEMENTS -->
+
+<body>
+  <article class="tweet clearfix">
+    <div class="avatar"></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="clear">Lorem ipsum dolor sit amet.</p>
+  </article>
+</body>
+
+<style>
+  .tweet {
+    border: 3px solid lightblue
+  }
+
+  .avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    /* paragraf wyswietlany pod spodem bo to block */
+
+    float: left;    daje avatar (box) do lewej i paragraf moze wskoczyc na prawa strone i oblac box
+  }
+
+  .clear {
+    clear: both;    drugi paragraf bedzie pod avatarem
+  }
+</style>
+
+Jesli usuniemy drugi p to element z float nie bedzie uwzgledniany przy ramce
+tweet (domyślnie rodzic nie widzi)
+
+<style>
+  .tweet::after {
+    content: "";             to znaczy brak kontentu
+    display: block;          konwertowanie elementu na blok (jak div)
+    clear: both;
+
+  }
+  .clearfix::after {       clearfix zeby moc dodac cos oprocz avatara i nie powtarzac kodu w CSS
+  content: "";             to znaczy brak kontentu
+  display: block;          konwertowanie elementu na blok (jak div)
+  clear: both;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 8 FLEX BOX -->
+
+UZYWAMY DO USTAWIANIA ELEMNTOW W KOLEJNOSCI NP W RZEDZIE LUB KOLUMNIE
+
+<body>
+  <div class="container">
+    <div class="box-one">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+</body>
+
+<style>
+  .container {
+    border: 3px solid lightgrey;
+    display: flex;                    wlaczamy ta opcje bo inaczej boxy sa jeden pod drugim BLOCKi
+    flex-direction: row;              moze byc___ row-reverse___column___column-reverse
+  }
+
+  .box {
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+  }
+</style>
+
+ROZMIESZCZENIE ELEMENTÓW
+
+<style>
+  .container {
+    border: 3px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    /* wzdłuż głównej osi (main) */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-evenly;     rozmieszczenie z rownymi odstepami obiektow miedzy soba i kontenerem
+    justify-content: space-between;    rozmieszczenie z rownymi odstepami obiektow miedzy soba i skrajne do kontenera
+    justify-content: space-around;     rozmieszczenie z rownymi odstepami obiektow miedzy soba i polowa odleglosci od kontenera
+
+    /* wzdłuż prostopadlej osi (cross) */ kontener musi miec podana wysokosc
+    align-items: flex-end;
+  }
+</style>
+
+<!-- jesli mamy duzo elementow i zaczynaja sie sciskac to -->
+
+<style>
+  .container {
+  flex-wrap: wrap;            przenosi do nastepnego rzedu (domyslnie nowrap)
+  align-content: center;      ta funkcja traktuje wszystkie rzedy jako calosc te zawiniete tez
+  }
+</style>
+
+jesli w takim flexboxie chcemy przemiescic jedna rzecz z kilku juz ulozonych to
+uzywamy
+
+<style>
+  .box-one {
+    align-self: flex-start;     box-one idzie do gory ze srodka (nadpisujemy align-items)
+  }
+</style>
+
+<!-- !!!!!!!!!!!! -->
+<!-- SIZING ITEMS -->
+uzywane do itemow nie do kontenerow
+
+<style>
+
+  .box {
+    flex-basis: 10rem;          nadpisuje width jakby bylo w kolumnie rozmieszczone to height by zmienialo
+    flex-grow: 1;               domyslnie 0  |  jesli damy 1 wszystkie boxy rosna rownomiernie
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+
+    flex-grow: 2;               jesli damy do pojedynczego boxa ten box rośnie reszta wypelnia kontener
+
+    flex-shrink: 0;             jesli damy do pojedynczego boxa ten box nie bedzie sie zmienial w zalez od okna
+
+    flex: 1 1 10rem;   lub      1 10rem; pierwsza flex-grow druga flex-shrink/flex-basis trzecia flex-basis
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 9 GRID -->
+
+<body>
+  <div class="container">
+    <div class="box box-one">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box box-four">D</div>
+  </div>
+</body>
+
+<!-- --------------------------------------------------------------- -->
+pierwszy sposob zapisu
+<style>
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template-rows: 100px 100px 100px;           liczba wierszy
+    grid-template-columns: 100px 100px;              liczba kolumn
+    border: 3px solid gray;                      SPRAWDZIC TO W TOOLDEV
+  }
+</style>
+
+drugi sposob zapisu
+<style>
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template-rows: repeat(3, 100px);                 liczba wierszy
+    grid-template-columns: repeat(2, 100px);              liczba kolumn
+    border: 3px solid gray;
+  }
+</style>
+
+trzeci sposob zapisu
+<style>
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template: repeat(3, 100px) / repeat(2, 100px);
+    border: 3px solid gray;
+  }
+</style>
+<!-- --------------------------------------------------------------- -->
+
+<style>
+  .box {                                boxy automatycznie sa doklejane do lewego gornego rogu
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+  }
+
+
+  /* ALIGNING ITEMS */
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template: repeat(3, 100px) / repeat(2, 100px);
+    border: 3px solid gray;
+
+
+    justify-items: center;            pozycjonuje obiekt w poziomie wewnatrz komorki siatki
+    align-items: start;               pozycjonuje obiekt w pionie wewnatrz komorki siatki
+    justify-content: center;          pozycjonuje kontener w widoku w osi poziomej
+    align-content: center;            pozycjonuje kontener w widoku w osi pionowej (trzeba dodac height np 200vh)
+  }
+</style>
+
+<style>
+  .container {
+    justify-items: stretch;            domyslna wartosć (jesli box nie mialby wymiarow zajmowalby cala komorke)
+    align-items: stretch;              domyslna wartosć (jesli box nie mialby wymiarow zajmowalby cala komorke)
+  }
+</style>
+
+<style>
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template: 100px auto 100px / 30fr 70fr;   wiersz 1 i 3 stała wysokosć / kolumny zabieraja 30% i 70% okna
+    border: 3px solid gray;
+  }
+</style>
+
+<!-- GAP --><!-- GAP --><!-- GAP --><!-- GAP --><!-- GAP --><!-- GAP -->
+
+<style>
+  .container {
+    display: grid;
+    /* 3 x 2 */
+    grid-template: 100px auto 100px / 30fr 70fr;   wiersz 1 i 3 stała wysokosć / kolumny zabieraja 30% i 70% okna
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+    gap: 10px 10px;                                 to samo co wyzej ale skrocone
+    gap: 10px;                                      to samo co wyzej tylko bardzo skrocone
+
+    border: 3px solid gray;
+  }
+</style>
+
+<!-- rozmieszczenie itemow po komorkach -->
+<style>
+    .box-one {
+      grid-column: 2;             przenosi box pierwszy do pierwszego rzedu i 2 kolumny
+
+      grid-column: 1 / 3;         box pierwszy zajmuje od pierwszej lini siatki do trzeciej (devTOOL)
+      grid-column: 1 / -1;        ten sam efekt co wyzej
+      grid-column: 1 / span 2;    to mowi ile kolumn zajmuje
+
+      grid-row: 2;                przenosimy box-one do drugiego rzedu (te co byly w drugim laduja w pierwszym)
+
+      grid-row: 2 / 4;            łaczy wiersz drugi i trzeci
+      grid-row: 2 / span 2;       to samo co wyzej
+
+      grid-area: 1 / 1 / 1 / 3;   pierwsze dwie to start (row / column) drugie dwie to koniec (row / column)
+      /* start / end */
+      /* row / column */
+    }
+
+  LOKACJA PO NAZWACH ________________________
+
+    .container {
+      grid-template-areas:
+        "header  header"        reprezentuje pierwszy rząd i kolejno kolumny
+        "sidebar main"          reprezentuje drugi rząd i kolejno kolumny
+        "footer  footer";       reprezentuje trzeci rząd i kolejno kolumny
+    }
+
+    .box-one {
+      grid-area: header;        bez cudzysłowiu bo nie zadziała
+    }
+
+    .box-four {
+      grid-area: footer;
+    }
+
+    /* jesli chciałbym zeby np footer zaczynał sie od drugiej kolumny to: */
+
+    .container {
+      grid-template-areas:
+        "header  header"        reprezentuje pierwszy rząd i kolejno dwie kolumny
+        "sidebar main"          reprezentuje drugi rząd i kolejno dwie kolumny
+        ".       footer";       reprezentuje trzeci rząd i kolejno dwie kolumny
+    }
+
+    .box-one {
+      grid-area: header;        bez cudzysłowiu bo nie zadziała
+    }
+
+    .box-four {
+      grid-area: footer;
+    }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 10 HIDING ELEMENTS -->
+
+<body>
+  <p class="first">first</p>
+  <p>second</p>
+</body>
+
+<style>
+  .first {
+    display: none;         pierwszy paragraf znika i drugi wchodzi na jego miejsce
+
+
+
+    visibility: hidden;    pierwszy paragraf jest niewidoczny ale zajmuje miejsce
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- LAYOUT -->
+<!-- 11 MEDIA QUERIES -->
+
+NAJLEPIEJ ZACZĄĆ OD APLIKACJI MOBILNEJ
+
+<body>
+  <div class="CONTAINER">
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet
+        velit voluptas accusantium nihil repellat earum esse quia tempore
+        excepturi officia voluptate, laudantium possimus voluptates facere
+        assumenda suscipit similique adipisci.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet
+        velit voluptas accusantium nihil repellat earum esse quia tempore
+        excepturi officia voluptate, laudantium possimus voluptates facere
+        assumenda suscipit similique adipisci.
+      </p>
+    </div>
+  </div>
+</body>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    background: gold;
+    padding: 1rem;
+  }
+
+  .box:nth-of-type(2) {
+    background: dodgerblue;
+  }
+
+  @media screen and (min-width: 600px) {
+    .container {
+      flex-direction: row;                            jesli ekran przekroczy szerokosc 600px zmienia regułe
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 900) {
+    .container {
+      flex-direction: row;                                          jeśli ekran bedzie pomiedzy to reguła x
+    }
+  }
+
+  @media print {
+    body {
+      font-size: 12pt;
+    }
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 2 STYLING FONTS -->
+
+<style>
+  p {
+    font-family: Arial, Helvetica, sans-serif;          to jest font stack;
+  }
+</style>
+
+Link ma serif font jesli chce zmienic zeby bylo spojnie na stronie to:
+
+<style>
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  Ale lepiej dla calej strony zmienic;
+
+  body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;    web safe fonts!
+
+    -----inne
+
+    font-weight: 100;                             od 100 do 900 wybór; normal - 400, bold - 900
+    font-style: italic;                           domyslnie normal
+
+
+    font-size: x-small;                           tu w oknie wyboru rozmiary fontu
+    font-size: 1rem;                              relatywne
+    font-size: 10px;                              absolutne
+    color: #333;                                  hexadecimal (jesli pierwsze 3 cyfry sa takie same jak drugie)
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 3 EMBEDDING WEB FONTS -->
+
+fontsquirrel.com; fonts.com; myfonts.com;
+
+<!-- format fontów WOFF lub WOFF1 dla sieci -->
+
+czyli jak sciagniemy w ttf to trzeba konwertowac na WOFF np na stronie
+fontsquirrel.com > Generator i pozniej wrzucic do VSC oraz skopiowac reguly z
+stylesheet na sama góre (nad body)
+
+<style>
+  /* rejestrowanie fontu u góry css */
+    /* dla regular */
+    @font-face {
+      font-family: "open_sansregular";                                            zmienic na "opensans"
+      src: url("opensans-regular-webfont.woff2") format("woff2"),                 zmienic lokalizacje fontu
+        url("opensans-regular-webfont.woff") format("woff");
+      font-weight: normal;                                                        zmienic wartosc
+      font-style: normal;
+    }
+
+    /* dla bold */
+    @font-face {
+      font-family: "open-sans";                                                   poprawiona
+      src: url("FONTS/open-sans/opensans-bold-webfont.woff2") format("woff2"),    poprawiona
+        url("FONTS/open-sans/opensans-bold-webfont.woff") format("woff");
+      font-weight: bold;                                                          poprawiona
+      font-style: normal;
+    }
+
+  /* jak zarejestrujemy to uzywamy gdzie chcemy np */
+
+    body {
+      margin: 10px;
+      font-family: "open-sans", Arial, Helvetica, sans-serif;                     dodajemy (uzyje jako pierwsze)
+    }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 4 FLASH OF UNSTYLED TEXT -->
+
+<style>
+    @font-face {
+      font-family: "open-sans";
+      src: url("FONTS/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+        url("FONTS/open-sans/opensans-bold-webfont.woff") format("woff");
+      font-weight: bold;
+      font-style: normal;
+
+  /* miganie przy ładowaniu fontu */
+
+      font-display: swap;           jesli nie ma custom fontu to pobiera w tle i mignie jak zaladuje
+      font-display: fallback;       daje przegladarce krotkie okno do pobrania custom fontu jak nie to wyswietla nastepny dostepny font
+      font-display: block;          nie miga w trakcie ale poki nie zaladuje to nie wyswietli tekstu (nie uzywac)
+      font-display: optional;       nie miga ale pierwsze otworzenie strony moze byc inne niz drugie (daje furtke ale jak sie nie uda to pobiera w tle i wyswietli nastepnym razem)
+    }
+</style>
+
+druga opcja redukowania wagi fontu przez zmiejszenie liczby znaków fontsquirrel
+> generator > expert > subsetting
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 5 FONT SERVICES -->
+
+wklejamy przed linkami normalize i stylesheet
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+
+  pozniej dopisujemy w css do font-family na pierwszym miejscu
+
+  <style>
+    body {
+      margin: 10px;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;                 nazwe bierzemy z stylesheet
+    }
+
+    h1 {
+      font-family: "Roboto", Georgia, "Times New Roman", Times, serif;        wklejonej do przegladarki (link w head)
+    }
+  </style>
+</html>
+
+<!-- link mozemy customowac QUERY STRING PARAMETERS (PO ZNAKU ZAPYTANIA W LINKU)-->
+"https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+<!-- & ODZIELA PARAMETRY - mozemy dodac grubosci albo zmienic display np na optional -->
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 6 SYSTEM FONT STACK -->
+
+fonty dopasowane do systemów operacyjnych (zaczynamy w oknie wpisywac od
+myslnika)
+
+<style>
+  body {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 7 SIZING FONTS -->
+
+<style>
+  html {
+    font-size: 62.5%;           to daje 62,5 x 16px = 10px
+  }
+
+  body {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+
+    /* 1 x font size of the root element (html) */
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 400px) {
+    html {
+      font-size: 130%;
+    }
+  }
+</style>
+
+PODGLAD WYSOKOSCI REM - type-scale.com
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 8 VERTICAL SPACING -->
+
+<style>
+  body {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+
+    /* 1 x font size of the root element (html) */
+    font-size: 1rem;
+    line-height: 1.5;           odstępy między wierszami (1.5 x font size !! good)
+    }
+
+    h1 {
+      margin: 3rem 0 1rem;      gora prawa dol (lewa taka jak prawa)   |    do odstępów (powinno sie korzystac ze zroznicowanych)
+    }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 9 HORIZONTAL SPACING -->
+
+<style>
+  body {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+
+    /* 1 x font size of the root element (html) */
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;             do kontrolowania odleglosci miedzy literami
+    word-spacing: 5px;               do kontrolowania odleglosci miedzy wyrazami
+    }
+</style>
+
+IDEAL LINE LENGTH (idealna dlugosc wiersza)
+
+<style>
+  p {
+    width: 50ch;                     nowa jednostka do okreslania liczby liter w wierszu
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TYPOGRAPHY -->
+<!-- 10 FORMATTING TEXT -->
+
+<style>
+  p {
+    width: 50ch;                     nowa jednostka do okreslania liczby liter w wierszu
+    --------------------------
+    text-align: left;                wyrównanie do (czasami uzywamy center)
+
+    text-indent: 1rem;               wciecie w tekscie w pierwszym wersie (jak w ksiazce  na pocz rozdzialu)
+  }
+
+
+  p + p {
+    text-indent: 1rem;               paragraf after paragraf (dziala na drugim)
+
+    text-decoration: underline;      podkresla tekst
+    text-decoration: line-through;   skreśla tekst
+
+    text-transform: capitalize;      kazdy nowy wyraz zaczyna sie wielka litera; inne (lowercase | uppercase)
+
+
+
+    white-space: nowrap;             zdziwie sie jak nalezy
+    border: 3px solid gold;          okno
+    overflow: visible;               do chowania paragrafu w boxie (usunniecie scrolla poziomego w oknie)
+
+    text-overflow: ellipsis;         dodanie kropek na koncu
+
+    line-clamp: 3;                   howa tekst po 3 linijce
+
+
+    /* kolumny */
+
+    column-count: 2;                 uklada text w dwie kolumny
+    column-gap: 1rem;                kontroluje przrwe miedzy kolumnami
+    column-rule: 3px dotted #999;    robi kreske miedzy kolumnami
+
+    direction: ltr;                  od lewej do prawej tekst (jest jeszcze rtl czyli od prawj do lewej strony)
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 2 IMAGE TYPES AND FORMATS -->
+
+SVG Scalable Vector Graphics
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 3 CONTENT IMAGES -->
+
+<img src="images/coffee.jpg" alt="A cup of coffee" />
+alt dla osob niewidomych i z slabym polaczeniem internetowym
+
+<img src="images/coffee.jpg" alt="" />
+alt dla obrazow o dekoracyjnej funkcji
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 4 BACKGROUND IMAGES -->
+
+<style>
+  body {
+    background: url(images/coffee.jpg);
+        domyslnie powtorzy grafike i dopasuje do okna bez rozszerzania
+
+    background-repeat: repeat-x;        powtorzy tylko w osi x
+    background-repeat: repeat-y;        powtorzy tylko w osi y
+
+    background-repeat: no-repeat;       nie powtorzy
+    background-position: 100px 100px;   absolute values przesówa 100px w prawo i 100px w dół (moga byc ujemne wartosci)
+    background-position: 100% 100%;     relative values przesówa do prawej krawedzi i dolnej okna (moga byc ujemne wartosci)
+
+    background-size: 100% 100%;         wypelni cale okno przegladarki jesli nadamy contenerowi wysokosc
+    height: 100vh;
+
+    background-size: cover;             to samo co wyzej tylko za pomoca keyword
+
+        jesli okno ma np opcje skrolowania i chcemy zachowac caly czas jeden widok
+
+    height: 300vh;
+    background-attachment: fixed;       zdjecie w jednej pozycji w tle a kontent na stronie sie rusza
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 5 CSS SPRITES -->
+
+OPTIMIZATION TECHNIC (łączenie ikon)
+
+<!-- cssspritestool.com -->
+
+Generujemy zip > po rozpakowaniu dodajemy combined png do folderu w VSC a
+nastepnie otwieramy plik css i kopiujemy wartosci do naszego stylesheet
+
+<style>
+  .bg-freezing-rain {
+    background: url("/images/css-sprite-combined.png") 0px -0px;
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+  }
+
+  .bg-life-vest {
+    background: url("/images/css-sprite-combined.png") -512px -0px;
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+  }
+
+  .bg-pollution {
+    background: url("/images/css-sprite-combined.png") -1024px -0px;
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+  }
+</style>
+
+Nastepnie w naszym html
+
+<html>
+  <body>
+    <span class="bg-freezing-rain"></span>
+    <span class="bg-life-vest"></span>
+    <span class="bg-pollution"></span>
+  </body>
+</html>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 6 DATA URLs -->
+
+cssportal.com/image-to-data/
+
+<body>
+  <img
+    src="data:image/png;base64,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"
+    alt="earth pollution"
+  />
+</body>
+
+jest szybsze dla przegladarki ale wiecej wazy niestety wolniejsze dla mobile
+(nie uzywac)
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 7 CLIPPING -->
+
+CSS CLIP Generator
+
+<body>
+  <img src="images/coffee.jpg" alt="" class="meal" />
+</body>
+
+<style>
+  .meal {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 8 FILTERS -->
+
+<body>
+  <img src="images/coffee.jpg" alt="" class="meal" />
+</body>
+
+<style>
+  .meal {
+    filter: grayscale(70%);                  70 proc efektu grayscale
+    filter: grayscale(70%) blur(3px);        mozna łaczyc efekty
+  }
+
+  pseudo-class selectors żeby po najechaniu myszką sie robilo
+
+  .meal:hover {                              teraz gdy najade myszka efekt sie pojawia
+    filter: grayscale(70%);                  70 proc efektu grayscale
+    filter: grayscale(70%) blur(3px);        mozna łaczyc efekty
+  }
+</style>
+
+developer.mozilla.org > przykladowe filtry
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 9 SUPPORTING HIGH-DENSITY SCREENS -->
+
+"device pixel ratio" (DPR) np 2 jesli "physical resolution" 960x640 a "logical
+resolution" 480x320
+
+<body>
+  <img
+    src="images/moto.png"
+    alt="Motocross"
+    class="moto"
+    srcset="images/moto.png 1x, images/moto@2.png 2x, images/moto@3.png 3x"
+  />
+</body>
+
+<style>
+  .meal {
+    width: 400px;
+  }
+</style>
+
+srcset podklada lepszej jakosci zdjecia dla wyswietlaczy o wyzszym DPR
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 10 RESOLUTION SWITCHING -->
+
+<body>
+  <img
+    src="images/moto.png"
+    alt="Motocross"
+    class="moto"
+    srcset="
+      images/moto.png     400w,
+      images/moto@2x.png  800w,
+      images/moto@3x.png 1200w
+    "
+    sizes="
+    (max-width: 500px) 100vw,
+    (max-width: 700px) 50vw, 33vw
+    "
+  />
+  <!-- zmienilismy 1x na szerokosc zdjecia 400w -->
+  widełki sa po to zeby na wielki ekran nie dawalo nam rozszerzenia maxymalnego
+</body>
+
+<!-- RESPONSIVE IMAGE BREAKPOINT GENERATOR!!!!!!!! -->
+sciagamy paczke i kopiujemy kod do html
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 11 USING MODERN IMAGE FORMATS -->
+
+convert jpg -> WEBP zeby zmiejszyc rozmiar zdjecia
+
+<!-- wsparcie dla noewgo formatu ale nie dla internet explorer -->
+
+<body>
+  <img src="images/moto.webp" alt="" />
+  <img src="images/moto.jpg" alt="" />
+</body>
+
+<!-- wsparcie dla internet explorer -->
+
+<body>
+  <picture>
+    <source type="image/webp" srcset="images/moto.webp" />
+    mozna laczyc
+    <source
+      type="image/webp"
+      srcset="images/moto.webp 1x, images/moto@2x.webp 2x"
+    />
+    <source
+      type="image/jpeg"
+      srcset="images/moto.jpg 1x, images/moto@2x.jpg 2x"
+    />
+    <img src="images/moto.jpg" alt="" />
+  </picture>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 12 ART DIRECTION -->
+
+WYSWIETLANIE ZDJEC W INNY SPOSOB NA INNYCH URZADZENIACH
+
+<body>
+  <picture>
+    <source media="(max-width: 500px)" srcset="images/moto-cropped.jpg" />
+    na telefonach bedzie przycinal zdjecie
+
+    <source media="(min-width: 501px)" srcset="images/moto.jpg" />
+
+    <img src="images/moto.jpg" alt="Motor" />
+  </picture>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 13 SCALABLE VECTOR GRAPHICS -->
+
+GRAFIKI WEKTOROWE (svg)
+
+<body>
+  <img class="pollution" src="images/pollution.svg" alt="" /> grafika w wektorze
+</body>
+
+<style>
+  body {
+    background: url(images/constellation.svg);                      tło w wektorze
+  }
+  .pollution {
+    width: 100px;
+  }
+</style>
+
+svgbackgrounds.com STRONKA DO DOBRYCH BACKGROUND
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- IMAGES -->
+<!-- 14 FONT ICONS -->
+
+<!-- Font Awesome, Ionicons, Material Design Icons -->
+
+aby uzyc font awesome trzeba wkleic script ponizej naszego stylesheet
+
+<body>
+  <i class="fas fa-user-friends"></i>
+
+  <i class="fas fa-bell"></i> mozna zmienic ikonke znajac nazwe
+  <i class="fas fa-bell fa-2x"></i> powiekszamy font dwa razy
+
+  <span class="icon">
+    dodajemy rodzica zeby w css miec kontrole nad stylowaniem
+    <span class="fas fas fa-bell"></span> mozna zamienic 'i' na 'span'
+  </span>
+</body>
+
+<style>
+  .icon {
+    color: brown;
+    font-size: 2rem;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 2 CREATING A BASIC FORM -->
+
+okno do wpisywania tresci obok nazwy
+
+<body>
+  <form>
+    <label for="">Name</label>
+    <input type="text" />
+  </form>
+</body>
+
+atrybut for ma wartosc "name" tak jak id inputu - kliknieciu na Name będzie juz
+kursorem w oknie
+
+<body>
+  <form>
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+  </form>
+</body>
+
+-----------------------------------------------------------------------
+dodalismy div zeby byly wertykalnie ustawione okna (block)
+
+<body>
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+    </div>
+  </form>
+</body>
+
+przycisk potwierdzenia i kasowania
+
+<body>
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+    </div>
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 3 STYLING FORMS -->
+
+stylowanie formularza
+
+<body>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+    </div>
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+</body>
+
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    line-height: 1.5;               powieksza wys wiersza
+    padding: 1rem;                  zeby odsunac od krawedzi okna;
+  }
+
+  label {
+    display: block;                 label to block element wiec zmieniamy display zeby było okno pod nazwa
+  }
+
+  input[type="text"],
+  input[type="email"] {             dodalismy atrybut w [...] zeby input bralo tylko tekstowe
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    transition: border-color 0.15s, box-shadow 0.15s;         płynne przejscie miedzy oknami
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: aqua;                                     zmienia kolor zaznaczonego okna
+    outline: 0;                                               zmienia grubosć zaznaczonego okna
+    box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);           cień dookola okna
+  }
+
+  button {
+    background: #0d6efd;
+    color: white;
+    border: 0;                      domyslnie jest brzydka ramka
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    outline: 0;                     zeby zlikwidowac brzydka ramke pojawiajaca sie przy kliknieciu na przycisk
+  }
+
+  .form-group {                     grupa stworzona zeby dodac odstep miedzy oknami
+    margin-bottom: 1rem;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 4 CSS FRAMEWORKS -->
+
+BOOTSTRAP, FOUNDATION, SEMANTIC UI, UI KIT, MATERIALIZE, MILLIGRAM
+
+<!-- CDN via jsDelivr -->
+bootstrap -> content delivery network
+<!--  -->
+
+kopiujemy link do head pod stylesheet
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="próba.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="mb-3 w-50">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" type="text" class="form-control" />
+      </div>
+      <div class="mb-3 w-50">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" class="form-control" />
+      </div>
+      <button class="btn btn-primary" type="submit">Register</button>
+      <button class="btn btn-secondary" type="reset">Clear</button>
+    </form>
+  </body>
+</html>
+
+<!-- pozniej zmieniamy classy na odpowiadajace bootstrap -->
+
+mb-3 odstęp, w-50 okno, forml-label, form-control, btn, btn-primary,
+btn-secondary
+
+<!-- MILLIGRAM duzo mniej zajmuje i jest prostszy -->
+milligram css link wrzucamy do head
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="próba.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 5 TEXT FIELDS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="próba.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <form>
+      <input type="number" />
+      <input type="password" />
+      <input type="date" />
+    </form>
+  </body>
+</html>
+
+<style>
+  form {
+    width: 50vw;
+    padding: 2rem;
+  }
+</style>
+
+wiecej inputów na ----
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+<body>
+  <form>
+    <input type="email" />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+textarea dla dluzszych textów (resize none zeby nie mozna bylo powiekszac okna)
+
+<style>
+  form {
+    resize: none;
+  }
+</style>
+
+--------------------------------------------------------------
+
+<!-- value -- przygotowuje w oknie input propozycje -->
+$$$$$$$$$$$$$$$$$ value
+<body>
+  <form>
+    <input type="email" value="programmingwithmosh@gmail.com" />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+<!-- placeholder -- pokazuje nazwe okna lub tekst ktory znika poz czaeciu wpisywania  -->
+$$$$$$$$$$$$$$$$$ placeholder
+<body>
+  <form>
+    <input type="email" placeholder="Email" />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+<!-- readonly -- nie mozna zmienic wartosci tylko do odczytu-->
+$$$$$$$$$$$$$$$$$ readonly
+<body>
+  <form>
+    <input type="email" readonly value="..." />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+<!-- disabled -- to samo co readonly ale dodatkowo nie mozemy wgl wybrac okna (kliknac) -->
+$$$$$$$$$$$$$$$$$ disabled
+<body>
+  <form>
+    <input type="email" disabled value="..." />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+<!-- maxlength -- uzytkownik moze wpisac tylko okreslona liczbe znakow -->
+$$$$$$$$$$$$$$$$$ maxlength
+<body>
+  <form>
+    <input type="email" maxlength="5" />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+<!-- autofokus -- po zaladowaniu strony kursor od razu jest w oknie -->
+$$$$$$$$$$$$$$$$$ autofokus
+
+<body>
+  <form>
+    <input type="email" autofokus />
+    <textarea cols="30" rows="10"></textarea>
+  </form>
+</body>
+
+jesli chccemy pre populate zeby bylo wypelnione (value) w textarea musimy to
+napisac miedzy nawiasami
+
+<body>
+  <form>
+    <input type="email" autofokus />
+    <textarea>Comments...</textarea>
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 6 DATA LISTS -->
+
+LISTA SUGESTI
+
+<body>
+  <form>
+    <input type="text" list="countries" autocomplete="off" />
+    <datalist id="countries">
+      <option data-value="1">Australia</option>
+      <option>Canada</option>
+      <option>Peru</option>
+      <option>Chile</option>
+    </datalist>
+  </form>
+</body>
+
+data-value ---- bedzie mozna dopisac do tej wartosci pozniej cos w js;
+autocomplete ---- nie wiem do czego służy
+
+<!-- jesli bede chcial zmienic w stylu wyswietlania listy czy cos to  -->
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 7 DROP-DOWN LISTS -->
+
+<body>
+  <form>
+    <select>
+      <option value="">Select a Course...</option>
+      <option value="1" selected>HTML</option>
+      <option value="2">CSS</option>
+      <option value="3">JAVASCRIPT</option>
+    </select>
+  </form>
+</body>
+
+LISTA wyboru
+<!-- "selected" WYBIERA WARTOSĆ STARTOWA W OKNIE -->
+
+--------------------------
+
+<body>
+  <form>
+    <select multiple>
+      <option value="">Select a Course...</option>
+      <option value="1" selected>HTML</option>
+      <option value="2">CSS</option>
+      <option value="3">JAVASCRIPT</option>
+    </select>
+  </form>
+</body>
+
+LISTA wyboru
+<!-- "multiple" WYBIERAć można wiele opcji -->
+
+--------------------------------------------------------------
+
+<body>
+  <form>
+    <select>
+      <optgroup label="Front-end Courses">
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JAVASCRIPT</option>
+      </optgroup>
+      <optgroup label="Back-end Courses">
+        <option value="1">Node.js</option>
+        <option value="2">ASP.net</option>
+        <option value="3">DJANGO</option>
+      </optgroup>
+    </select>
+  </form>
+</body>
+
+LISTA wyboru
+<!-- "optgroup" podzial na sekcje w liscie wyboru -->
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 8 CHECK BOXES -->
+ptaszki
+
+<body>
+  <form>
+    <div>
+      <input type="checkbox" id="front-end" />
+      <label class="label-inline" for="front-end">Front-end</label>
+    </div>
+    <div>
+      <input type="checkbox" id="back-end" checked />
+      <label class="label-inline" for="back-end">Front-end</label>
+    </div>
+    <div>
+      <input type="checkbox" id="back-end" disabled />
+      <label class="label-inline" for="back-end">Front-end</label>
+    </div>
+  </form>
+</body>
+
+<!-- checked zaznaczy ptaszek na starcie -->
+<!-- disabled nie pozwoli zaznaczyc -->
+
+dodalismy class inline poniewaz podpis byl pod checkbox mozna to sprawdzic na
+----- milligram > docs -----
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 9 RADIO BUTTONS -->
+
+zaznaczenie pojedynczej opcji cos jak checkbox ale tylko jedno
+
+<body>
+  <form>
+    <div>
+      <input type="radio" name="membership" id="silver" />
+      <label class="label-inline" for="silver">Silver</label>
+    </div>
+    <div>
+      <input type="radio" name="membership" id="gold" />
+      <label class="label-inline" for="gold">Gold</label>
+    </div>
+  </form>
+</body>
+
+<!-- checked zaznaczy ptaszek na starcie -->
+<!-- disabled nie pozwoli zaznaczyc -->
+tak samo jak w chceck boxie mozna dodac te opcje
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 10 SLIDERS -->
+suwak
+
+<body>
+  <form>
+    <div>
+      <input type="range" min="0" max="100" value="90" />
+    </div>
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 11 FILE INPUTS -->
+wgrywanie pliku
+
+<body>
+  <form>
+    <div>
+      <input type="file" multiple accept=".jpg, .png" />
+    </div>
+  </form>
+</body>
+
+<!-- multiple ---- pozwala wybrac wiecej plikow; -->
+<!-- accept ---- pozwala na konkretny typ plikow; -->
+
+<body>
+  <form>
+    <div>
+      <input type="file" multiple accept="image/*" />
+    </div>
+  </form>
+</body>
+
+<!-- image/* ---- pozwala wybrac obojetnie jaki plik graficzny; -->
+<!-- video/* ---- pozwala wybrac obojetnie jaki plik video; -->
+<!-- audio/* ---- pozwala wybrac obojetnie jaki plik audio; -->
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 12 GROUPING RELATED FIELDS -->
+GRUPOWANIE INPUTÓW W KONTENERY
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Billing Address</legend>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </fieldset>
+    <fieldset>
+      <legend>Payment</legend>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </fieldset>
+  </form>
+</body>
+
+alternatywnie mozna tez
+
+<body>
+  <form>
+    <section>
+      <h2>Billing Address</h2>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </section>
+    <section>
+      <h2>Payment</h2>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </section>
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 13 HIDDEN FIELDS -->
+
+<body>
+  <form>
+    <input type="hidden" name="course-id" value="1234" />
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 14 DATA VALIDATION -->
+SPRAWDZENIE POPRAWNOSCI
+
+<body>
+  <form>
+    <input type="text" required />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+--------------------------------------------------------------
+<!-- minlength ----- minimalna ilosc znaków -->
+<!-- maxlength ----- maxymalna ilosc znaków ---- powinno sie wpiisywac zeby niezasmiecili strony zbyt dlugimi odp -->
+
+<body>
+  <form>
+    <input type="text" required minlength="3" maxlength="10" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+------- dla roznych typów email, numbers, date
+
+<body>
+  <form>
+    <input type="email" required />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+<!-- zawsze ustalamy przedziałke zeby nie zepsuli ujemnymi cyframi  -->
+<body>
+  <form>
+    <input type="numbers" required min="0" max="5" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- FORMS -->
+<!-- 15 SUBMITTING THE FORM -->
+
+<body>
+  <form>
+    <input type="text" placeholder="Name" />
+    <input type="text" placeholder="Email" />
+    <button type="submit">Submit</button>
+
+    <!-- inny sposob ale nie tak dobry na dodanie submit button ale tu juz nie mozemy ikon dodawac etc-->
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+
+dodawanie ikony wewnatrz przycisku
+
+<body>
+  <form>
+    <input type="text" placeholder="Name" />
+    <input type="text" placeholder="Email" />
+    <button type="submit">
+      <i class="fas fa-alert"></i>
+      Submit
+    </button>
+  </form>
+</body>
+
+-----------------------------------------
+<!-- "tworzymy taki backend na stronie" -->
+
+<body>
+  <form action="https://formspree.io/........." method="post">
+    <input type="text" placeholder="Name" name="name" />
+    <input type="text" placeholder="Email" name="email" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+<!-- action ---->
+gdzie wysyłamy danego --> --> FORMSPREE.io/forms <--- strona do tego
+<!-- method ---->
+jak wysyłamy dane np moze byc GET
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TRANSFORMATIONS, TRANSITIONS AND ANIMATIONS -->
+<!-- 2 TRANSFORMATIONS -->
+
+<body>
+  <div class="box">Lorem ipsum dolor sit.</div>
+</body>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background: gold;
+  }
+
+  .box:hover {
+    transform: rotate(15deg);                   obraca o 15 stopni w prawo po najechaniu (-15deg bedzie w lewo)
+    transform: scale(1.5);                      powieksza obiekt 1,5 raza (0.5 zmiejsza o polowe)
+    transform: skew(15deg);                     pochyla o 15 stopni w lewo (-15deg bedzie w prawo)
+    transform: translate(10px, 10px);           przesuwa obiekt w prawo i w dół o 10 px
+
+    transform: rotate(15deg) translateX(50px);  mozna łaczyc (kolejność ma znaczenie)
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TRANSFORMATIONS, TRANSITIONS AND ANIMATIONS -->
+<!-- 3 3D TRANSFORMATIONS -->
+
+<body>
+  <div class="box">Lorem ipsum dolor sit.</div>
+</body>
+
+<style>
+  .box {
+
+    transform: translateZ(50px);      wartosc dodatnia (wyzsza) blizsza nam a ujemna (-50px) dalsza
+
+    ale musimy dodac perspective
+
+
+    /* przyblizenie */
+    transform: perspective(200px) translateZ(50px);
+
+    /* uchylenie */
+    transform: perspective(200px) rotateY(45deg);       kręci sie przez os pionowa w srodku
+
+    transform-origin: 0 0;                              x y   obrót wzgledem górny lewy róg boxu
+    transform-origin: 0 50%;                            x y   obrót względem środka lewego boku
+  }
+</style>
+
+jesli chcemy efektna kilku elementach na raz to lapiemy je w container
+
+<body>
+  <div class="container">
+    <div class="box">Lorem ipsum dolor sit.</div>
+    <div class="box">Lorem ipsum dolor sit.</div>
+  </div>
+</body>
+
+<style>
+  .container:hover {
+    transform: perspective(200px) rotateY(45deg);
+    transform-origin: 0 0;
+  }
+</style>
+
+$$$$$$ jesli chcemy rozne efekty na roznych elementach containera to $$$$$$
+
+<body>
+  <div class="container">
+    <div class="box">Lorem ipsum dolor sit.</div>
+    <div class="box box-special">Lorem ipsum dolor sit.</div>
+  </div>
+</body>
+
+<!-- zeby wygladalo to naturalnie trzeba wszystkim dac jednakowa perspektywe -->
+
+<style>
+  .container {
+    perspective: 200px;
+  }
+
+  .container:hover .box {
+    transform: rotateX(45deg);
+    transform-origin: 0 50%;
+  }
+
+  .container:hover .box-special {
+    transform: rotateY(45deg);                        juz nie potrzebujemy funkcji perspective tutaj
+    transform-origin: 0 50%;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TRANSFORMATIONS, TRANSITIONS AND ANIMATIONS -->
+<!-- 4 TRANSITIONS -->
+przejścia (super strona cubic-bezier.com)
+
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background: gold;
+    transition: transform 0.5s;                                   animacja trwa 0.5s dodajemy do .box (domyslnie linear)
+
+    transition: transform 0.5s ease-in;                           zaczyna sie powoli i szybko konczy
+    transition: transform 0.5s ease-out;                          zaczyna sie szybko i powoli konczy
+
+    transition: transform 0.5s cubic-bezier(.23,.59,.79,.41);     dowolna dynamica ze strony cubic-bezier
+
+    transition: transform 0.5s linear 1s;                         3cia wartosc to opoznienie animacji po najechaniu
+
+    transition: transform 0.5s, background 0.5s;                  po przecinku moge animowac inne rzeczy niz transform
+  }
+
+  .box:hover {
+    transform: rotate(45deg);
+    background: dodgerblue;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TRANSFORMATIONS, TRANSITIONS AND ANIMATIONS -->
+<!-- 5 ANIMATIONS -->
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+
+    25% {
+      transform: scale(1.3);
+    }
+
+    50% {
+      transform: rotate(45deg);
+      background: tomato;
+    }
+
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background: gold;
+    animation-name: pop;                          nazwa z keyframes
+    animation-duration: 4s;                       czas trwania
+    animation-delay: 1s;                          z jakim opoznieniem ma sie animacja wyswietlic
+    animation-iteration-count: infinite;          ile razy animacja ma sie powtorzyc (1 domyslnie) 2, 3, nieskonczenie
+    animation-timing-function: ease-out;          wartosci jak wyzej (domyslnie linear)
+    animation-direction: alternate;               od poczatku do konca leci i pozniej od konca do poczatku
+
+    /* mozna to wypelnic po prostu */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- TRANSFORMATIONS, TRANSITIONS AND ANIMATIONS -->
+<!-- 6 REUSABLE ANIMATIONS -->
+SZABLON animacji
+
+<style>
+  .animation-pop {
+    animation-name: pop;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+  }
+</style>
+
+<body>
+  <div class="box animation-pop">Lorem ipsum dolor sit.</div>
+</body>
+
+strona ---- animate.style ---- wkleic link w head i class do biektu
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="próba.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <!-- class po bix wklejony ze strony -->
+  <body>
+    <div class="box animate__animated animate__bounce">
+      Lorem ipsum dolor sit
+    </div>
+  </body>
+</html>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WRITING CLEAN, MAINTAINABLE CSS -->
+<!-- 2 CSS BEST PRACTICES -->
+
+<!-- FOLLOW A NAMING CONVENTION -->
+
+<!-- KEBAB CASE -->
+.nav-bar
+
+<!-- CAMEL CASE -->
+.navBar
+
+<!-- PASCAL CASE -->
+.NavBar
+
+<!-- CREATE A LOGICAL SECTIONS IN STYLESHEET -->
+
+<style>
+  /* Basic styles */
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+  }
+
+  /* Typography */
+  h1,
+  h2,
+  h3 {
+  }
+
+  /* Forms */
+  /* Navigation Bar */
+</style>
+
+<!-- AVOID OVER-SPECIFIC SELECTORS -->
+
+<!-- AVOID !IMPORTANT -->
+
+<!-- SORT CSS PROPERITIES -->
+command palette > sort lines ascending !!!!!!!!!!!!
+
+<!-- TAKE ADVANTAGE OF STYLE INHERITANCE -->
+
+<!-- EXTRACT REPETITIVE PATTERNS -->
+
+<!-- AVOID REPETITIVE VALUES (KEEP IT DRY) -->
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WRITING CLEAN, MAINTAINABLE CSS -->
+<!-- 3 VARIABLES -->
+
+.box-1+.box-2 ---- robi dwa divy o roznych klasach
+
+<div class="box-1"></div>
+<div class="box-2"></div>
+
+<style>
+  .one {
+    background: gold;                           !!!!! zle bo powtarzamy się
+  }
+
+  .two {
+    background: gold;
+  }
+</style>
+
+<style>
+  :root {
+    --color-primary: gold;
+    --border-size: 2px;
+    --border-radius: 10px;
+  }
+
+
+  .one {
+    background: var(--color-primary);            !!!!! zeby nie powtarzac uzywamy root i var
+  }
+
+  .two {
+    background: var(--color-primary);
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- WRITING CLEAN, MAINTAINABLE CSS -->
+<!-- 5 BEM BLOCK ELEMENT MODIFIER -->
+
+<body>
+  <div class="card car--popular">
+    oddzielamy block od modifier "--"
+
+    <header class="card__header">
+      oddzelamy block od element "__"
+
+      <span class="card__price"></span>
+    </header>
+    <div class="card__body">
+      <button class="btn"></button>
+    </div>
+  </div>
+</body>
+
+<!-- TUH5&C3S: PART3 CODE WITH MOSH-->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 10 TYPOGRAPHY -->
+
+<!-- h${Heading $}*3 skrót do szybkiego wyswietlenia tytułów nagłówków -->
+<body>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+</body>
+
+<style>
+  :root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+  }
+
+  body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--color-body);
+  }
+</style>

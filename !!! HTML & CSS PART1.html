@@ -3403,12 +3403,12 @@ SVG SPRITE
     border-radius: 4rem;
     border: 0;
     color: #fff;
-    cursor: pointer;
+    cursor: pointer;               kursor zamieniam na łapke wyglada na cos interaktywnego
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
     padding: 2rem 7rem;
-    white-space: nowrap;
+    white-space: nowrap;           nie zawija
   }
 
   .btn--accent {
@@ -3439,13 +3439,105 @@ SVG SPRITE
     background: #00c8eb;
   }
 
-  .btn--block {
+  .btn--block {                     WAŻNE! klasa ktora umozliwia dopasowanie do okna kontenera card
     width: 100%;
     display: inline-block;
   }
 
   @media screen and (min-width: 1024px) {
     .btn {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 16 INPUTS -->
+
+<style>
+  .input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3rem;
+    outline: 0;
+    color: var(--color-headings);
+  }
+
+  ::placeholder {           pseudo element selector zmieniamy kolor i rozmiar placegolder
+    color: #cdcbd7;
+    font-size: 2rem;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 17 INPUT GROUPS -->
+
+przycisk po prawej stronie
+<body>
+  <div class="input-group">
+    <input type="text" class="input" placeholder="Enter domain name her..." />
+    <button class="btn btn--accent">search</button>
+  </div>
+</body>
+
+przycisk po lewej stronie (dalismy wyzej button niz input)
+<body>
+  <div class="input-group">
+    <button class="btn btn--accent">search</button>
+    <input type="text" class="input" placeholder="Enter domain name her..." />
+  </div>
+</body>
+
+zmienilismy button na icon
+<body>
+  <div class="input-group">
+    <span class="icon-container">
+      <svg class="icon icon--primary">
+        <use xlink:href="images/sprite.svg#wordpress"></use>
+      </svg>
+    </span>
+    <input type="text" class="input" placeholder="Enter domain name her..." />
+  </div>
+</body>
+
+grupa input przycisk w oknie do wpisywania
+
+<style>
+  .input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+  }
+
+  .input-group .input {
+    border: 0;
+    flex-grow: 1;                      przesuwa/ przenosi button na koniec okna input
+    padding: 1.5rem 1rem;              zmienia tylko input w grupie
+  }
+
+  .input-group .btn {
+    margin: 1rem;
+  }
+
+  ::placeholder {
+    color: #cdcbd7;
+  }
+
+  .input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .input {
       font-size: 1.5rem;
     }
   }

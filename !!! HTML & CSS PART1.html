@@ -3241,3 +3241,59 @@ command palette > sort lines ascending !!!!!!!!!!!!
     color: var(--color-body);
   }
 </style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 11 LINKS -->
+
+<body>
+  <a href="#" class="link-arrow">Learn More</a>
+</body>
+
+<style>
+  .link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .link-arrow::after {                       dodajemy element po jakies klasie (moze byc icon)
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s;
+  }
+
+  .link-arrow:hover::after {
+    margin-left: 10px;                       element sie porusza dzieki hover przesuwa
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 12 BADGES -->
+
+<style>
+  /* Badges */
+
+  .badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    white-space: nowrap;                    nie bedzie zawijalo tekstu jak bedzie malo miejsca
+  }
+
+  .badge--primary {
+  /* BEM ---- Block Element Modifier */
+
+
+
+
+
+
+
+
+  }
+</style>

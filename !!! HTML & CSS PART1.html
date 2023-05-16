@@ -3275,25 +3275,62 @@ command palette > sort lines ascending !!!!!!!!!!!!
 <!-- CONTENT -->
 <!-- 12 BADGES -->
 
-<style>
-  /* Badges */
+<body>
+  <span class="badge badge--primary badge--small">10% Off</span>
+</body>
 
-  .badge {
-    border-radius: 20px;
-    padding: 0.5rem 2rem;
-    font-weight: bold;
-    white-space: nowrap;                    nie bedzie zawijalo tekstu jak bedzie malo miejsca
+<style>
+    /* Badges */
+
+    .badge {
+      border-radius: 20px;
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+      white-space: nowrap;                    nie bedzie zawijalo tekstu jak bedzie malo miejsca
+    }
+
+    .badge--primary {
+    /* BEM ---- Block Element Modifier */
+      background: var(--color-primary);
+      color: #fff;
   }
 
-  .badge--primary {
-  /* BEM ---- Block Element Modifier */
+  .badge--secondary {
+      background: var(--color-secondary);
+      color: #fff
+  }
 
+  .badge--small {
+      font-size: 1.6rem;
+  }
+</style>
 
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 13 LISTS -->
 
+<body>
+  <ul class="list list--inline">
+    <li class="list__item">Item 1</li>
+    <li class="list__item">Item 2</li>
+    <li class="list__item">Item 3</li>
+  </ul>
+</body>
 
+<style>
+    .list {                                       lista wertykalna
+      list-style: none;
+      padding-left: 0;
+      color: var(--color-headings);
+    }
 
+    .list--inline .list__item {                   lista horyzontalna
+      display: inline-block;
+      margin-right: 2rem;
+    }
 
-
-
+    .list--tick {                                 dodawanie obrazka do listy
+      list-style-image: url(/images/tick.svg);
   }
 </style>

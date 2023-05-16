@@ -3334,3 +3334,39 @@ command palette > sort lines ascending !!!!!!!!!!!!
       list-style-image: url(/images/tick.svg);
   }
 </style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 14 ICONS -->
+
+SVG SPRITE
+
+<span class="icon-container">
+  <svg class="icon icon--primary">
+    <use xlink:href="images/sprite.svg#wordpress"></use>
+  </svg>
+</span>
+
+<style>
+    .icon {
+      width: 40px;
+      height: 40px;
+  }
+
+  .icon--primary {
+      fill: var(--color-primary);                  fill uzywamy zmiany koloru elementow svg
+  }
+
+  .icon-container {                                myslinik laczy multiple word
+      align-items: center;
+      background: #f3f9fa;
+      border-radius: 100%;
+      display: inline-flex;                        zeby ladnie kolko sie wyswietlalo
+      height: 64px;
+      justify-content: center;
+      width: 64px;
+  }
+</style>
+
+---- tworzenie uniwrsalnych class do robienia roznych wariacji ikon

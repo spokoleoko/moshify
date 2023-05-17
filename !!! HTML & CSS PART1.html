@@ -3648,3 +3648,23 @@ card + plan mamy całą sekcje z header z main badges i buttons
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <!-- CONTENT -->
 <!-- 20 POPULAR BADGE -->
+
+<style>
+  .plan--popular .card__header {
+    position: relative;
+  }
+
+  .plan--popular .card__header::before {        wybiera element ktory jest przed card header
+    content: url(/images/popular.svg);          dodanie grafiki
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    top: -6px;                                  pozycjonowanie od góry
+    right: 5%;                                  pozycjonowanie od prawej
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 21 MEDIA OBJECTS -->

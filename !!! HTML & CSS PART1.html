@@ -3542,3 +3542,109 @@ grupa input przycisk w oknie do wpisywania
     }
   }
 </style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 18 CARDS -->
+
+DIV style okreslamy szerokosc i odstepy dla karty
+
+<div style="width: 30%; padding: 4rem">
+  <div class="card card--primary">
+    <header class="card__header">card title</header>
+    <div class="card__body">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+      perferendis libero illo, cupiditate iste praesentium vel laborum eveniet
+      molestias nulla?
+    </div>
+  </div>
+</div>
+
+<style>
+    .card {
+      border-radius: 7px;
+      box-shadow: 0 0 20px 10px #f3f3f3;      czwarta wartosc to dlugosc cienia
+      overflow: hidden;                         zniknely/uciekly zaokraglenia radius przez dodanie koloru w header
+  }
+
+  .card__header,
+  .card__body {
+      padding: 2rem 3rem;
+  }
+
+  .card--primary .card__header {
+      background: var(--color-primary);
+      color: #fff;
+  }
+
+  .card--secondary .card__header {
+      background: var(--color-secondary);
+      color: #fff;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 19 PLANS -->
+
+card + plan mamy całą sekcje z header z main badges i buttons
+
+<div style="width: 30%; padding: 4rem">
+  <div class="plan">
+    <div class="card card--secondary">
+      <header class="card__header">
+        <h3 class="plan__name">Entry</h3>
+        <span class="plan__price">$14</span>
+        <span class="plan__billing-cycle">/month</span>
+        <span class="badge badge--secondary badge--small">10% OFF</span>
+        <span class="plan__description">Easy start on the cloud</span>
+      </header>
+      <div class="card__body">
+        <ul class="list list--tick">
+          <li class="list__item">Unlimited Websites</li>
+          <li class="list__item">Unlimited Bandwidth</li>
+          <li class="list__item">100 GB SSD Sotrage</li>
+          <li class="list__item">3 GB RAM</li>
+        </ul>
+        <button class="btn btn--outline btn--block">buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .plan__name {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  .plan__price {
+    font-size: 6rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;                             przezroczystosc elementu/przeźroczystość
+    margin-right: 1rem;
+  }
+
+  .plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;                      odstepy miedzy literami
+    display: block;
+  }
+
+  .plan .list__item {
+    margin-bottom: 2rem;
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 20 POPULAR BADGE -->

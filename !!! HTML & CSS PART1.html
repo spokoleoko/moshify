@@ -3835,7 +3835,6 @@ do przemieszczenia linni pozycja relatywna wzgledem podst polozenia
 </div>
 
 <style>
-  /* Callouts */
 
   .callout {
       padding: 4rem;
@@ -3881,4 +3880,68 @@ do przemieszczenia linni pozycja relatywna wzgledem podst polozenia
           margin: 0 2rem;
       }
   }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 25 COLLAPSIBLES -->
+
+rozwijane menu java script
+
+<style>
+      .collapsible__header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .collapsible_heading {
+        margin-top: 0;
+        font-size: 3rem;
+      }
+
+      .collapsible__chevron {           zamknieta pozycja
+        transform: rotate(-90deg);
+        transition: transform 0.3s;     płynne przejscie
+      }
+
+      .collapsible__content {           zamknieta pozycja
+        display: none;                  tutaj nie da sie tego animowac (transition) dlatego ponizej co trzeba
+      }
+
+      .collapsible--expanded .collapsible__chevron {       otwarta pozycja
+        transform: rotate(0);
+      }
+
+      .collapsible--expanded .collapsible__content {       otwarta pozycja
+        display: block;
+      }
+
+    /* ---------------------- */
+
+      .collapsible__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;            zeby zastosowalo opacity robimy all
+        opacity: 0;
+      }
+
+      .collapsible--expanded .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+      }
+
+  /* ------------------------ */
+
+      .collapsible__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+        opacity: 0;
+      }
+
+      .collapsible--expanded .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+      }
 </style>

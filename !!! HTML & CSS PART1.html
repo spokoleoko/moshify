@@ -3724,3 +3724,93 @@ do przemieszczenia linni pozycja relatywna wzgledem podst polozenia
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <!-- CONTENT -->
 <!-- 23 GRIDS -->
+
+<body>
+  <div class="grid grid--1x2">
+    <div style="height: 100px; background: gold"></div>
+    <div style="height: 100px; background: dodgerblue"></div>
+  </div>
+</body>
+
+<style>
+
+  .grid {
+      display: grid;
+  }
+
+  @media screen and (min-width: 768px) {
+      .grid--1x2 {
+          grid-template-columns: 1fr 1fr;           cala dostepna szerokosc dzielona na dwa
+      }
+      /* moze byc tez ----  grid-template-columns: repeat(2, 1fr);  -- */
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 24 TESTIMONIALS -->
+
+<div class="card testimonial">
+  <div class="grid grid--1x2">
+    <div class="testimonial__image">
+      <img src="images/testimonial.jpg" alt="A happy, smiling costumer" />
+      <span class="icon-container icon-container--accent">
+        <svg class="icon icon--white icon--small">
+          <use xlink:href="images/sprite.svg#quotes"></use>
+        </svg>
+      </span>
+    </div>
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit et
+        incidunt praesentium, repellat officiis quidem autem fuga sunt error
+        nemo.
+      </p>
+      <footer>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary quote__line">
+              <use xlink:href="images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title quote__author">John Smith</h3>
+            <p class="quote__organization">ABC Company</p>
+          </div>
+        </div>
+      </footer>
+    </blockquote>
+  </div>
+</div>
+
+<style>
+  .testimonial {
+      padding: 3rem;
+  }
+
+  .testimonial__image {
+      position: relative;
+  }
+
+  .testimonial__image > img {        wybiera zdjecie bezposrednio w container
+      width: 100%;                   i daje mu 100% szerokosci kontenera
+  }
+
+  .testimonial__image > .icon-container {   wybiera pierwsza ikone w kontenerze
+      position: absolute;
+      top: 3rem;
+      right: -32px;
+  }
+
+  @media screen and (min-width: 768px) {    zmienilismy dla tabletow wielkosc fontu
+      .testimonial .quote,
+      .testimonial .quote__author {
+         font-size: 2.4rem;
+      }
+
+      .testimonial .quote {
+          margin-left: 6rem;
+      }
+  }
+</style>

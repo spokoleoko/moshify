@@ -3814,3 +3814,71 @@ do przemieszczenia linni pozycja relatywna wzgledem podst polozenia
       }
   }
 </style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 25 CALLOUTS -->
+
+<div class="callout callout--primary">
+  <div class="grid grid1x2">
+    <div class="callout__content">
+      <h2 class="callout__heading">Ready to Get Started?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+        laudantium suscipit debitis blanditiis in quo harum tempora autem id
+        ipsum.
+      </p>
+    </div>
+    <a href="#" class="btn btn--secondary">Get Started</a>
+  </div>
+</div>
+
+<style>
+  /* Callouts */
+
+  .callout {
+      padding: 4rem;
+      border-radius: 5px;
+  }
+
+  .callout--primary {
+      background: var(--color-primary);
+      color: #fff;
+  }
+
+  .callout__heading {
+      color: #fff;
+      margin-top: 0;
+      font-size: 3rem;
+  }
+
+  .grid {
+      display: grid;
+      justify-items: center;        domyslnie jest stretch czyli rozciaga elemnty w oknie siatki
+      align-items: center;
+   }
+
+   .callout .btn {
+      align-self: center;           nie wiem dlaczego to tu jest
+      align-self: center;
+  }
+
+  .callout__content {
+      text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+      .callout .grid--1x2 {
+          grid-template-columns: 1fr auto;    druga kolumna na auto czyli wezmie tylko tyle miejsca ile potrzebuje na btn
+      }                                       reszta przestrzeni pojdzie do pierwszej kolumny
+
+      .callout__content {
+          text-align: left;
+      }
+      .callout .btn {
+          justify-self: start;
+          margin: 0 2rem;
+      }
+  }
+</style>

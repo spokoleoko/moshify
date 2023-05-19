@@ -4013,4 +4013,86 @@ rozwijane menu java script
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <!-- CONTENT -->
-<!-- 27 NAVIGATION BARS -->
+<!-- 28 NAVIGATION BARS -->
+
+<body>
+  <nav class="nav collapsible">
+    <a class="nav__brand" href="/"><img src="/images/logo.svg" alt="" /></a>
+    <svg class="icon icon--white nav__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Hosting</a></li>
+      <li class="nav__item"><a href="#">VPS</a></li>
+      <li class="nav__item"><a href="#">Domain</a></li>
+      <li class="nav__item"><a href="#">Pricing</a></li>
+    </ul>
+  </nav>
+  <script src="main.js"></script>
+</body>
+
+menu dla urzadzen mobilnych i komputera
+
+<style>
+  .nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;       trzeba rozsunac elementy
+    flex-wrap: wrap;                      liste przeniesc do nastepnego wiersza
+    padding: 0 1rem;
+    align-items: center;
+  }
+
+  .nav__list {
+    width: 100%;                          dzieki wrap i width 100% lista laduje w nastepnym wierszu
+    margin: 0;
+  }
+
+  .nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;      linnie oddzielajace linki
+  }
+
+  .nav__item > a {
+    color: #d2d0db;                       zmiana koloru
+    transition: color 0.3s;
+  }
+
+  .nav__item > a:hover {
+    color: #fff;                        po najechaniu (transition w podstawie nie w hover)
+  }
+
+  .nav__toggler {                         (ikonka menu) w menu zwinietym
+    opacity: 0.5;                         zmieniamy jasnosc
+    transition: box-shadow 0.15s;
+    cursor: pointer;                      kursor
+  }
+
+  .nav.collapsible--expanded .nav__toggler {     w menu rozwinietym
+    opacity: 1;                                  zmienia sie przezroczystosc cien
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+  }
+
+  .nav__brand {
+    transform: translateY(5px);                  funkcja przesuwajaca logo w dol;
+  }
+
+  @media screen and (min-width: 768px) {        dla kompa
+    .nav__toggler {                             toggler niewidoczny
+      display: none;
+    }
+
+    .nav__list {
+      width: auto;                              dzieki auto lista dopasowuje sie do dostepnej przestrzeni w 1szym wierszu
+      display: flex;
+      font-size: 1.6rem;
+      max-height: 100%;                         te dwie wartosci trzeba ustawic zeby byl zawsze widoczny
+      opacity: 1;                               nav bar na szerokim (inaczej sie ukryje)
+    }
+
+    .nav__item {
+      border: 0;
+    }
+  }
+</style>

@@ -4,7 +4,7 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
-    --color-body-darker: #5c5577;
+    --color-bodysection-darker: #5c5577;
     --color-border: #ccc;
     --border-radius: 3rem;
 }
@@ -33,6 +33,7 @@ h2,
 h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -680,3 +681,30 @@ background: #02cdf1;
     }
 }
 
+/* Hero */
+
+.hero {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__image {
+   width: 100%; 
+}
+
+@media screen and (min-width: 768px) {
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+
+    .hero {
+        padding-top: 0;
+    }
+}

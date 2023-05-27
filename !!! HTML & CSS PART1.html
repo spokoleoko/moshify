@@ -4236,3 +4236,66 @@ zmiejszanie wielkosci obrazu przez convert to webp
       }
   }
 </style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 33 FEATURES BLOCK -->
+
+<style>
+  .feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+  }
+
+  .feature:first-of-type {
+    margin-top: 2rem;
+  }
+
+  .feature__image {
+    max-width: 100%;
+  }
+
+  .feature__heading {
+    margin: 1rem 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {      zmienia kolejnosc wyswietlania grida w szerokim oknie contentu
+      order: 2;
+    }
+  }
+</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- CONTENT -->
+<!-- 34 SHOWCASE BLOCK -->
+
+<style>
+    ::selection {                         zaznaczony element inne tło i kolor
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+  /* Showcase Block */
+
+  .block-showcase__image > img {
+      width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+      .block-showcase .grid {
+          grid-template-columns: 50% 50%;       zmieniamy template siatki na kolumny pol na pol
+  }
+
+      .block-showcase__image {
+          justify-self: end;                    zdjecie do prawej krawedzi
+      }
+  }
+
+      .block-showcase__image > img {            szerokosc auto ale nie wieksza niz 700
+      width: auto;
+      max-width: 700px;
+  }
+</style>

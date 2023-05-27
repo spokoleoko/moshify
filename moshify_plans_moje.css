@@ -804,3 +804,27 @@ a {
         width: 30px;
     }
 }
+
+/* Features Block */
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__image {
+    max-width: 100%;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+}

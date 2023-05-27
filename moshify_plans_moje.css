@@ -330,18 +330,15 @@ a {
     color: #fff;
 }
 
-.card--primary .badge--primary {
-    background-color: #126de4;
-}
-
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
 
-/* Plans */
-.plan {
-    transition: transform .2s ease-out;
+.card--primary .badge--primary {
+    background-color: #1f74e4;
 }
+
+/* Plans */
 
 .plan__name {
     color: #fff;
@@ -371,10 +368,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.plan--popular {
-    transform: scale(1.1);
-}
-
 .plan--popular .card__header {
     position: relative;
 }
@@ -386,14 +379,6 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
-}
-
-.plan:hover {
-    transform: scale(1.05)
-}
-
-.plan--popular:hover {
-    transform: scale(1.15)
 }
 
 @media screen and (min-width: 1024px) {
@@ -770,12 +755,52 @@ a {
 
 /* Plans Block */
 
-.block-plans .grid {
-    gap: 8rem 4rem;
-
+.block-plan {
+    display: block;
+    margin-top: 5rem;
+    padding: 5rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
 }
 
-.block-plans .card {
-    max-width: 500px;
-    margin: 0 auto;
+.plan {
+    transition: transform 0.1s ease-in;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    margin-bottom: 7rem;
+}
+
+.plan--popular {
+    padding: 0;
+    transition: transform 0.1s ease-in;
+}
+
+.plan--popular:hover {
+    transform: scale(1.06)
+}
+
+@media screen and (min-width: 1024px) {
+    .block-plan {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem 1rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+        max-width: 1024px;
+    }
+
+    .plan--popular {
+        scale: 1.05;
+    }
+
+    .plan--popular .card__header::before {
+        width: 30px;
+    }
 }
